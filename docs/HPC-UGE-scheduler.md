@@ -1,7 +1,7 @@
 <h1>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="docs/images/wf-ani_logo_dark.png">
-    <img alt="bacterial-genomics/wf-ani" src="docs/images/wf-ani_logo_light.png">
+    <img alt="gregorysprenger/wf-ani" src="docs/images/wf-ani_logo_light.png">
   </picture>
 </h1>
 
@@ -17,7 +17,7 @@
 ## Install on our HPC
 
 ```
-git clone https://github.com/bacterial-genomics/wf-ani.git $LAB_HOME/workflows
+git clone https://github.com/gregorysprenger/wf-ani.git $LAB_HOME/workflows
 ```
 
 ## Setup Singularity environment variables - For Aspen Cluster

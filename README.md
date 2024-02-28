@@ -1,15 +1,15 @@
 <h1>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="docs/images/wf-ani_logo_dark.png">
-    <img alt="bacterial-genomics/wf-ani" src="docs/images/wf-ani_logo_light.png">
+    <img alt="gregorysprenger/wf-ani" src="docs/images/wf-ani_logo_light.png">
   </picture>
 </h1>
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/bacterial-genomics/wf-ani)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/gregorysprenger/wf-ani)
 [![Nextflow](https://img.shields.io/badge/nextflow%20DSL2-%E2%89%A522.04.3-23aa62.svg)](https://www.nextflow.io/)
 [![run with docker](https://img.shields.io/badge/run%20with-docker-0db7ed?labelColor=000000&logo=docker)](https://www.docker.com/)
 [![run with singularity](https://img.shields.io/badge/run%20with-singularity-1d355c.svg?labelColor=000000)](https://sylabs.io/docs/)
-[![MegaLinter](https://github.com/bacterial-genomics/wf-ani/actions/workflows/mega-linter.yml/badge.svg)](https://github.com/bacterial-genomics/wf-ani/actions/workflows/mega-linter.yml)
+[![MegaLinter](https://github.com/gregorysprenger/wf-ani/actions/workflows/mega-linter.yml/badge.svg)](https://github.com/gregorysprenger/wf-ani/actions/workflows/mega-linter.yml)
 
 ![workflow](docs/images/wf-ani_workflow.png)
 
@@ -37,14 +37,14 @@ Run the built-in test set to confirm all parts are working as-expected. It will 
 ### Pull workflow from GitHub
 
 ```
-nextflow pull bacterial-genomics/wf-ani
+nextflow pull gregorysprenger/wf-ani
 ```
 
 ### Run test workflow
 
 ```
 nextflow run \
-  bacterial-genomics/wf-ani \
+  gregorysprenger/wf-ani \
   -r main \
   -profile <docker|singularity>,test
 ```
@@ -56,14 +56,14 @@ Example command on FastAs in "new-fasta-dir" data using **BLAST** (ANIb) with si
 ### Pull workflow from GitHub
 
 ```
-nextflow pull bacterial-genomics/wf-ani
+nextflow pull gregorysprenger/wf-ani
 ```
 
 ### Run workflow
 
 ```
 nextflow run \
-  bacterial-genomics/wf-ani \
+  gregorysprenger/wf-ani \
   -r main \
   -profile singularity \
   --input new-fasta-dir \
@@ -130,7 +130,7 @@ View help menu of all workflow options:
 
 ```
 nextflow run \
-  bacterial-genomics/wf-ani \
+  gregorysprenger/wf-ani \
   -r main \
   --help \
   --show_hidden_params
