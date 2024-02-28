@@ -67,7 +67,7 @@ With `INPUT_DIRECTORY`:
 ```bash
 nextflow run \
   gregorysprenger/wf-ani \
-  -r main \
+  -r greg \
   -profile docker \
   --input INPUT_DIRECTORY \
   --outdir OUTPUT_DIRECTORY
@@ -78,7 +78,7 @@ With `samplesheet.csv`:
 ```bash
 nextflow run \
   gregorysprenger/wf-ani \
-  -r main \
+  -r greg \
   -profile docker \
   --input samplesheet.csv \
   --outdir OUTPUT_DIRECTORY \
@@ -100,7 +100,7 @@ OUTPUT_DIRECTORY    # Finished results in specified location (defined with --out
 When you run the above command, Nextflow automatically pulls the pipeline code from GitHub and stores it as a cached version. When running the pipeline after this, it will always use the cached version if available - even if the pipeline has been updated since. To make sure that you're running the latest version of the pipeline, make sure that you regularly update the cached version of the pipeline:
 
 ```bash
-nextflow pull gregorysprenger/wf-ani -r main
+nextflow pull gregorysprenger/wf-ani -r greg
 ```
 
 ### Reproducibility

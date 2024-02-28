@@ -45,7 +45,7 @@ nextflow pull gregorysprenger/wf-ani
 ```
 nextflow run \
   gregorysprenger/wf-ani \
-  -r main \
+  -r greg \
   -profile <docker|singularity>,test
 ```
 
@@ -64,7 +64,7 @@ nextflow pull gregorysprenger/wf-ani
 ```
 nextflow run \
   gregorysprenger/wf-ani \
-  -r main \
+  -r greg \
   -profile singularity \
   --input new-fasta-dir \
   --outdir my-results \
@@ -131,7 +131,7 @@ View help menu of all workflow options:
 ```
 nextflow run \
   gregorysprenger/wf-ani \
-  -r main \
+  -r greg \
   --help \
   --show_hidden_params
 ```
